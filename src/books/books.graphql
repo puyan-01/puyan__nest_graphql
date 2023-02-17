@@ -27,7 +27,7 @@ input CreateBookInput {
   id: String!
   name: String!
   type: String
-  authorId: String
+  authorId: String!
 }
 input CreateAuthorInput {
   id: String!

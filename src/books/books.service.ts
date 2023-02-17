@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { CreateBookInput } from './dto/create-book.input';
+import { CreateBookDto } from './dto/create-book.input';
 
 @Injectable()
 export class BooksService {
-  create(createBookInput: CreateBookInput) {
+  create(createBookInput: CreateBookDto) {
     return {
       exampleField: 4,
     };

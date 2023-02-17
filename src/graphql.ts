@@ -12,7 +12,7 @@ export class CreateBookInput {
     id: string;
     name: string;
     type?: Nullable<string>;
-    authorId?: Nullable<string>;
+    authorId: string;
 }
 
 export class CreateAuthorInput {
