@@ -1,0 +1,16 @@
+{
+  "powermode.enabled": true,
+  "powermode.presets": "flames",
+  "powermode.combo.location": "off",
+  "powermode.combo.timeout": 10,
+  "powermode.shake.enabled": false,
+  "powermode.explosions.enabled": true,
+  "powermode.shake.intensity": 1,
+  "powermode.explosions.backgroundMode": "image",
+  "powermode.explosions.duration": 800,
+  "powermode.explosions.frequency": 1,
+  "powermode.explosions.offset": 0.85,
+  "powermode.explosions.size": 3,
+  "powermode.explosions.gifMode": "restart",
+  "prettier.arrowParens": "always"
+}

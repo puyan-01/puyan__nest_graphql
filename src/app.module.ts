@@ -4,12 +4,16 @@ import { AppService } from './app.service';
 import { BooksModule } from './books/books.module';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core';
+
 @Module({
   imports: [
     BooksModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       typePaths: ['./**/*.graphql'],
+      playground: false,
+      plugins: [ApolloServerPluginLandingPageLocalDefault],
     }),
   ],
   controllers: [AppController],

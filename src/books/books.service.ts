@@ -4,13 +4,18 @@ import { CreateBookInput } from './dto/create-book.input';
 @Injectable()
 export class BooksService {
   create(createBookInput: CreateBookInput) {
-    return 'This action adds a new book';
+    return {
+      exampleField: 4,
+    };
   }
 
   findAll() {
-    // return `This action returns all books`;
     return [
-      {examp}
+      {
+        exampleField: 1,
+      },
+      { exampleField: 2 },
+      { exampleField: 3 },
     ];
   }
 

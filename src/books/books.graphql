@@ -1,17 +1,38 @@
-type Book {
-  # Example field (placeholder)
-  exampleField: Int
-}
-
-input CreateBookInput {
-  # Example field (placeholder)
-  exampleField: Int
-}
-
 type Query {
   books: [Book]!
+  author: [Author]!
 }
 
 type Mutation {
   createBook(createBookInput: CreateBookInput!): Book!
+  createAuthor(createAuthorInput: CreateAuthorInput!): Author!
+}
+
+type Book {
+  id: String!
+  name: String!
+  type: String
+  author: Author!
+}
+type Author {
+  id: String!
+  name: String!
+  # 0男 1女
+  gender: Int!
+  emall: String!
+  books: [Book!]
+}
+
+input CreateBookInput {
+  id: String!
+  name: String!
+  type: String
+  authorId: String
+}
+input CreateAuthorInput {
+  id: String!
+  name: String!
+  # 0男 1女
+  gender: Int!
+  emall: String!
 }

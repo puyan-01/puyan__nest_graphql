@@ -15,9 +15,4 @@ export class BooksResolver {
   findAll() {
     return this.booksService.findAll();
   }
-
-  @Query('book')
-  findOne(@Args('id') id: number) {
-    return this.booksService.findOne(id);
-  }
 }
